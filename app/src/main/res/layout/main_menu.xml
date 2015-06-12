@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/app_name"
+        android:id="@+id/textView12"
+        android:background="#3c000000"
+        android:textSize="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Menu"
+        android:id="@+id/textView13"
+        android:textSize="40dp"
+        android:layout_below="@+id/textView12"
+        android:layout_centerHorizontal="true" />
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/grid"
+        android:rowCount="3"
+        android:columnCount="3"
+        android:layout_below="@+id/textView13"
+        android:layout_centerHorizontal="true">
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="95dp"
+            android:id="@+id/btnThu_MainMenu"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:background="@drawable/thu" />
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="95dp"
+            android:id="@+id/btnChi_MainMenu"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:background="@drawable/chi" />
+
+        <ImageButton
+            android:layout_width="170dp"
+            android:layout_height="190dp"
+            android:id="@+id/btnThongKe_MainMenu"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:background="@drawable/thongke" />
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="95dp"
+            android:id="@+id/btnVay_MainMenu"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:background="@drawable/vay" />
+
+        <ImageButton
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/btnthem_MainMenu"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:background="@drawable/doipass" />
+    </GridLayout>
+
+    <ImageButton
+        android:layout_width="75dp"
+        android:layout_height="85dp"
+        android:id="@+id/btnlogout_MainMenu"
+        android:layout_below="@+id/grid"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/thoat" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/horizontalScrollView" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>
